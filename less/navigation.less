@@ -2,7 +2,7 @@
 .navbar {
     background-color: @nav-bg;
     border: 1px solid @nav-border;
-    .height-width (10rem, 100%);
+    .height-width (10rem, auto);
     flex-direction:column;
     .custom-flex (center, center);
     .bizname {
@@ -12,6 +12,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         margin-bottom: 1rem;
+        
 
         a {
             font-family: @nav-font;
@@ -23,6 +24,7 @@
             @media @phone {
                 flex-wrap: wrap;
                 margin: 1rem .2rem;
+                font-size: 1.3rem;
             }
         }
     }
