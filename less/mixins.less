@@ -11,13 +11,18 @@
 	&:hover {
 		color: @color2;
 		background-color: @color1;
-	}
+    }
+    
+    @media @phone {
+        width: 100%;
+    }
 }
 .custom-flex (@justify-content, @align-items) {
     display: flex;
     justify-content: @justify-content;
     align-items: @align-items;
 }
-.height-width {@height, @width}
+.height-width (@height, @width) {
     height: @height;
     width: @width;
+}
